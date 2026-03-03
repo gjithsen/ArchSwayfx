@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Get the username of the person running the script
+USER_NAME=$(whoami)
+
 set -e  # Exit on any error
 
 echo "=== Swayfx Arch Rice Installer ==="
@@ -21,6 +24,9 @@ sudo pacman -S --needed --noconfirm - < packages.txt
 echo "Installing config files..."
 mkdir -p ~/.config
 mkdir ~/.config/wal
+
+WOFI_CSS_FILE="configs/wofi/style.css"
+sed -i "s|/home/username/|/home/$USER_NAME/|g" "$WOFI_CSS_FILE"
 
 mv configs/foot ~/.config/
 mv configs/sway ~/.config/
