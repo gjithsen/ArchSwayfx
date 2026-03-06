@@ -2,8 +2,6 @@
 
 A personal **Arch Linux SwayFX rice** with my preferred configs, themes, and setup scripts.
 
-![preview](preview.png)
-
 ## Requirements
 
 * **Fresh Arch Linux install**
@@ -18,7 +16,7 @@ passwd username
 EDITOR=nano visudo
 ```
 
-Uncomment:
+Uncomment the following line in `visudo`:
 
 ```
 %wheel ALL=(ALL:ALL) ALL
@@ -39,18 +37,38 @@ chmod +x install.sh
 ./install.sh
 ```
 
-The script will install required packages and apply the configuration automatically.
+The script installs required packages and applies the configuration automatically.
+
+---
+
+## Dynamic Theming (Pywal)
+
+This rice uses **pywal**, so the entire color scheme is **dynamic** and generated from your wallpaper.
+
+To change the wallpaper and regenerate the colors, run:
+
+```bash
+wal -i /path/to/your/wallpaper
+```
+
+Example:
+
+```bash
+wal -i ~/Pictures/wallpapers/wall.jpg
+```
+
+All supported applications will automatically update their colors based on the wallpaper.
 
 ---
 
 ## Notes
 
-* This setup assumes **a clean Arch environment**.
-* Existing configs may be overwritten.
-* Review the `install.sh` script if you want to customize the installation.
+* This setup assumes **a clean Arch environment**
+* Existing configs may be **overwritten**
+* You can review or modify the `install.sh` script if you want to customize the installation
 
 ---
 
 ## Repository
 
-GitHub: https://github.com/gjithsen/archswayfx
+https://github.com/gjithsen/archswayfx
