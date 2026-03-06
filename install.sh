@@ -3,14 +3,14 @@
 # Get Swayfx
 sudo pacman -S --needed --noconfirm base-devel git
 git clone https://aur.archlinux.org/scenefx0.4.git
-cd scenefx0.4
+cd scenefx0.4/
 makepkg -si --noconfirm
-cd
+cd ..
 sudo rm -r scenefx0.4/
 git clone https://aur.archlinux.org/swayfx.git
-cd swayfx
+cd swayfx/
 makepkg -si --noconfirm
-cd
+cd ..
 sudo rm -r swayfx/
 
 # Get the username of the person running the script
