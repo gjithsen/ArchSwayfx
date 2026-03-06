@@ -11,7 +11,7 @@ git clone https://aur.archlinux.org/swayfx.git
 cd swayfx
 makepkg -si --noconfirm
 cd
-sudo rm -r scenefx0.4/
+sudo rm -r swayfx/
 
 # Get the username of the person running the script
 USER_NAME=$(whoami)
