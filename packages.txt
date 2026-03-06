@@ -1,4 +1,3 @@
-swayfx
 xorg-xwayland
 swaybg
 waybar
