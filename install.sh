@@ -23,7 +23,7 @@ sudo pacman -S --needed --noconfirm - < packages.txt
 # Copy configs to ~/.config/
 echo "Installing config files..."
 mkdir -p ~/.config
-mkdir ~/.config/wal
+mkdir -p ~/.config/wal
 
 WOFI_CSS_FILE="configs/wofi/style.css"
 sed -i "s|/home/username/|/home/$USER_NAME/|g" "$WOFI_CSS_FILE"
@@ -33,9 +33,6 @@ mv configs/sway ~/.config/
 mv configs/waybar ~/.config/
 mv configs/wofi ~/.config/
 mv configs/wal/templates ~/.config/wal
-
-# Copy .bashrc
-mv home/.bashrc ~/
 
 # Copy wallpapers
 echo "Copying wallpapers..."
