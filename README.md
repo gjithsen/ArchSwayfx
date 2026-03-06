@@ -1,6 +1,9 @@
 # Arch SwayFX Rice
 
 A personal **Arch Linux SwayFX rice** with my preferred configs, themes, and setup scripts.
+![Project Screenshot](Wallpapers/riceshowcase3.jpg)
+![Project Screenshot](Wallpapers/riceshowcase1.jpg)
+![Project Screenshot](Wallpapers/riceshowcase2.jpg)
 
 ## Requirements
 
