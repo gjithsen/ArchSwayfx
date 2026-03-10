@@ -70,6 +70,7 @@ All supported applications will automatically update their colors based on the w
 * This setup assumes **a clean Arch environment**
 * Existing configs may be **overwritten**
 * You can review or modify the `install.sh` script if you want to customize the installation
+* If you don't have a keen knowleadge on linux wtf are you doing using Arch and this ain't for you. Maybe start with Mint or something.
 
 ---
 
